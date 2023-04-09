@@ -50,9 +50,9 @@ def sms():
             send_sms('Starting pomodoro working technique.')
             for i in range(int(message[9:])):
                 send_image('25 working minute period started!', "https://cdn.pixabay.com/photo/2021/11/11/23/18/tomato-6787483_960_720.png")
-                time.sleep(10)
+                time.sleep(1500)
                 send_image('5 minute break period started!', "https://live.staticflickr.com/65535/50428246811_8a7c95c262_b.jpg")
-                time.sleep(10)
+                time.sleep(300)
             send_image("Good Job! Your work/study period is over!", "https://cdn.pixabay.com/photo/2022/12/11/04/11/thumbs-up-7648171_960_720.png")
         else:
             print(message[10:])
